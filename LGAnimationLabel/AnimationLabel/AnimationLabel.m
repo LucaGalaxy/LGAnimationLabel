@@ -364,6 +364,49 @@
     return limbos;
 }
 
+// 获取其中的某一瞬间
+- (NSMutableArray <AnimationCharacterLimbo *>*)limboOfOriginCharactersWithProgress:(NSTimeInterval)progress {
+    NSMutableArray *limbos = [NSMutableArray array];
+    
+    [self.previousText enumerateSubstringsInRange:NSMakeRange(0, self.previousText.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+        AnimationCharacterLimbo *limboOfChar = [self limboOfOriginCharacter:substring atIndex:substringRange.location progress:progress];
+        if (limboOfChar) {
+            [limbos addObject:limboOfChar];
+        }
+    }];
+    
+    [self.text enumerateSubstringsInRange:NSMakeRange(0, self.text.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+        if (substringRange.location >= self.diffResults.count) {
+            *stop = YES;
+        } else {
+            // Don't draw character that already exists
+            AnimationDiffResult *diffResult = [self.diffResults objectAtIndex:substringRange.location];
+            if (diffResult.skip) {
+                // continue
+            } else {
+                switch ([diffResult.diffType integerValue]) {
+                    case AnimationLabelDiffTypeReplace:
+                    case AnimationLabelDiffTypeMoveAndAdd:
+                    case AnimationLabelDiffTypeAdd:
+                    case AnimationLabelDiffTypeDelete: {
+                        AnimationCharacterLimbo *limboOfChar = [self limboOfLaterCharacter:substring atIndex:substringRange.location progress:progress];
+                        if (limboOfChar) {
+                            [limbos addObject:limboOfChar];
+                        }
+                    }
+                        break;
+                    default: {
+                        
+                    }
+                        break;
+                }
+            }
+        }
+    }];
+    
+    return limbos;
+}
+
 @end
 
 @implementation AnimationLabel (Drawing)
@@ -398,5 +441,50 @@
                                                      NSForegroundColorAttributeName : [self.textColor colorWithAlphaComponent:charLimbo.alpha]}];
         }
     }
+}
+@end
+
+@implementation AnimationLabel (Control)
+
+- (void)setProgress:(CGFloat)progress needPause:(BOOL)pause {
+    
+    if (pause) {
+        [self pause];
+    }
+    
+    self.animationProgress = progress;
+    
+    // 字体状态
+    for (AnimationCharacterLimbo *charLimbo in [self limboOfOriginCharactersWithProgress:progress]) {
+        
+        CGRect charRect = charLimbo.rect;
+        
+        BOOL willAvoidDefaultDrawing = NO;
+        NSString *blockKey = [NSString stringWithFormat:@"(%zi)(%zi)", self.animationEffect, AnimationPhasesDraw];
+        AnimationLabelDrawingBlock block = [self.drawingBlocks objectForKey:blockKey];
+        if (block) {
+            willAvoidDefaultDrawing = block(charLimbo);
+        }
+        
+        if (!willAvoidDefaultDrawing) {
+            NSString *s = charLimbo.character;
+            [s drawInRect:charRect withAttributes: @{NSFontAttributeName : [UIFont fontWithName:self.font.fontName size:charLimbo.size],
+                                                     NSForegroundColorAttributeName : [self.textColor colorWithAlphaComponent:charLimbo.alpha]}];
+        }
+    }
+
+    // 粒子效果暂时不支持暂停和中间进度
+    
+    [self setNeedsDisplay];
+}
+
+- (void)pause {
+    _isPaused = YES;
+    [self.displayLink setPaused:YES];
+}
+
+- (void)resume {
+    _isPaused = NO;
+    [self.displayLink setPaused:NO];
 }
 @end

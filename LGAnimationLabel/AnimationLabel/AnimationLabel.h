@@ -48,8 +48,9 @@ typedef NSInteger(^AnimationLabelSkipFrameBlock)(void);
 @property (nonatomic, assign) float animationProgress;  // default 0.0
 @property (nonatomic, assign) float animationDuration;  // defalut 0.6
 @property (nonatomic, assign) float animationCharacterDelay;     // default 0.026
-@property (nonatomic, assign) float animationEnable;    // default YES
+@property (nonatomic, assign) BOOL animationEnable;    // default YES
 @property (nonatomic, assign) AnimationLabelEffect animationEffect; // default SCALE
+@property (nonatomic, assign) BOOL isPaused;
 
 // -------------- 子类调用部分开始 --------------
 // 注：这里的Key值格式如下 @"(%zi)(%zi)", AnimationEffect, AnimationPhases
@@ -79,5 +80,14 @@ typedef NSInteger(^AnimationLabelSkipFrameBlock)(void);
 
 - (void)didMoveToSuperview;
 - (void)drawTextInRect:(CGRect)rect;
+
+@end
+
+@interface AnimationLabel (Control)
+
+- (void)setProgress:(CGFloat)progress needPause:(BOOL)pause;
+
+- (void)pause;
+- (void)resume;
 
 @end

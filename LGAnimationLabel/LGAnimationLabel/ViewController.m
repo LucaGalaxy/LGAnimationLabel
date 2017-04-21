@@ -25,13 +25,14 @@
     // now we have implemented effects included in this array
     self.effects = @[@(AnimationLabelEffectScale), @(AnimationLabelEffectEvaporate), @(AnimationLabelEffectFall), @(AnimationLabelEffectPixelate), @(AnimationLabelEffectSparkle), @(AnimationLabelEffectAnvil)];
     
+    self.label.text = @"";
     
     self.label.animationEnable = YES;
     self.label.delegate = self;
     
     // if you want to change the previewing effects
     // change the effect value below
-    self.label.animationEffect = AnimationLabelEffectScale;
+    self.label.animationEffect = AnimationLabelEffectEvaporate;
     
     // AND you will also need to change the class name of self.label in storyboard!!
 }
@@ -46,6 +47,14 @@
     current ++;
     current = current % [self.texts count];
     self.label.text = [self.texts objectAtIndex:current];
+}
+
+- (IBAction)pauseAction:(id)sender {
+    [self.label setProgress:0.2 needPause:YES];
+}
+
+- (IBAction)sliderAction:(UISlider *)sender {
+    [self.label setProgress:sender.value needPause:YES];
 }
 
 - (void)animationLabelDidStart:(AnimationLabel *)label {

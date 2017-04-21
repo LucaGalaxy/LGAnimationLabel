@@ -63,7 +63,7 @@
 		6409C2771EA9F8B100BD97A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		6409C2781EA9F8B100BD97A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LGAnimationLabel/Info.plist; sourceTree = SOURCE_ROOT; };
 		6409C2791EA9F8B100BD97A8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LGAnimationLabel/main.m; sourceTree = SOURCE_ROOT; };
-		6409C27A1EA9F8B100BD97A8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = LGAnimationLabel/ViewController.h; sourceTree = SOURCE_ROOT; };
+		6409C2881EAA030600BD97A8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = LGAnimationLabel/ViewController.h; sourceTree = SOURCE_ROOT; };
 		641B6A651EA74E290007FDB0 /* LGAnimationLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGAnimationLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		641B6A7E1EA74E290007FDB0 /* LGAnimationLabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LGAnimationLabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		641B6A8E1EA74E330007FDB0 /* AnimationCharacterLimbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationCharacterLimbo.h; sourceTree = "<group>"; };
@@ -156,13 +156,13 @@
 		641B6A671EA74E290007FDB0 /* LGAnimationLabel */ = {
 			isa = PBXGroup;
 			children = (
+				6409C2881EAA030600BD97A8 /* ViewController.h */,
 				6409C26F1EA9F8B100BD97A8 /* ViewController.m */,
 				6409C2701EA9F8B100BD97A8 /* AppDelegate.h */,
 				6409C2711EA9F8B100BD97A8 /* AppDelegate.m */,
 				6409C2721EA9F8B100BD97A8 /* Assets.xcassets */,
 				6409C2731EA9F8B100BD97A8 /* Base.lproj */,
 				6409C2781EA9F8B100BD97A8 /* Info.plist */,
-				6409C27A1EA9F8B100BD97A8 /* ViewController.h */,
 				641B6A681EA74E290007FDB0 /* Supporting Files */,
 			);
 			name = LGAnimationLabel;
