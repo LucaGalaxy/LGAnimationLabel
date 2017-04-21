@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6409C1DC1EA867AB00BD97A8 /* EvaporateEffectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409C1DB1EA867AB00BD97A8 /* EvaporateEffectLabel.m */; };
+		6409C1E61EA86F8800BD97A8 /* Fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 6409C1E21EA86F8800BD97A8 /* Fire.png */; };
+		6409C1E71EA86F8800BD97A8 /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = 6409C1E31EA86F8800BD97A8 /* Fragment.png */; };
+		6409C1E81EA86F8800BD97A8 /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 6409C1E41EA86F8800BD97A8 /* Smoke.png */; };
+		6409C1E91EA86F8800BD97A8 /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6409C1E51EA86F8800BD97A8 /* Sparkle.png */; };
+		6409C2111EA8DCBD00BD97A8 /* FallEffectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409C2101EA8DCBD00BD97A8 /* FallEffectLabel.m */; };
+		6409C2141EA9A12000BD97A8 /* PixelateEffectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409C2131EA9A12000BD97A8 /* PixelateEffectLabel.m */; };
+		6409C2171EA9A43100BD97A8 /* SparkleEffectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409C2161EA9A43100BD97A8 /* SparkleEffectLabel.m */; };
+		6409C2271EA9B5D400BD97A8 /* AnvilEffectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409C2261EA9B5D400BD97A8 /* AnvilEffectLabel.m */; };
+		6409C27B1EA9F8B100BD97A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409C26F1EA9F8B100BD97A8 /* ViewController.m */; };
+		6409C27C1EA9F8B100BD97A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409C2711EA9F8B100BD97A8 /* AppDelegate.m */; };
+		6409C27D1EA9F8B100BD97A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6409C2721EA9F8B100BD97A8 /* Assets.xcassets */; };
+		6409C27E1EA9F8B100BD97A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6409C2741EA9F8B100BD97A8 /* LaunchScreen.storyboard */; };
+		6409C27F1EA9F8B100BD97A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6409C2761EA9F8B100BD97A8 /* Main.storyboard */; };
+		6409C2801EA9F8B100BD97A8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6409C2781EA9F8B100BD97A8 /* Info.plist */; };
+		6409C2811EA9F8B100BD97A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409C2791EA9F8B100BD97A8 /* main.m */; };
+		641B6A991EA74E330007FDB0 /* AnimationCharacterLimbo.m in Sources */ = {isa = PBXBuildFile; fileRef = 641B6A8F1EA74E330007FDB0 /* AnimationCharacterLimbo.m */; };
+		641B6A9A1EA74E330007FDB0 /* AnimationEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 641B6A911EA74E330007FDB0 /* AnimationEasing.m */; };
+		641B6A9B1EA74E330007FDB0 /* AnimationLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 641B6A931EA74E330007FDB0 /* AnimationLabel.m */; };
+		641B6A9C1EA74E330007FDB0 /* AnimationLabelEmitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 641B6A961EA74E330007FDB0 /* AnimationLabelEmitterView.m */; };
+		641B6A9D1EA74E330007FDB0 /* NSString+AnimationLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 641B6A981EA74E330007FDB0 /* NSString+AnimationLabel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		641B6A7F1EA74E290007FDB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 641B6A5D1EA74E290007FDB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 641B6A641EA74E290007FDB0;
+			remoteInfo = labelcoding;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6409C1DA1EA867AB00BD97A8 /* EvaporateEffectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EvaporateEffectLabel.h; path = Effect/EvaporateEffectLabel.h; sourceTree = "<group>"; };
+		6409C1DB1EA867AB00BD97A8 /* EvaporateEffectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EvaporateEffectLabel.m; path = Effect/EvaporateEffectLabel.m; sourceTree = "<group>"; };
+		6409C1E21EA86F8800BD97A8 /* Fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fire.png; sourceTree = "<group>"; };
+		6409C1E31EA86F8800BD97A8 /* Fragment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fragment.png; sourceTree = "<group>"; };
+		6409C1E41EA86F8800BD97A8 /* Smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Smoke.png; sourceTree = "<group>"; };
+		6409C1E51EA86F8800BD97A8 /* Sparkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sparkle.png; sourceTree = "<group>"; };
+		6409C20F1EA8DCBD00BD97A8 /* FallEffectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FallEffectLabel.h; path = Effect/FallEffectLabel.h; sourceTree = "<group>"; };
+		6409C2101EA8DCBD00BD97A8 /* FallEffectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FallEffectLabel.m; path = Effect/FallEffectLabel.m; sourceTree = "<group>"; };
+		6409C2121EA9A12000BD97A8 /* PixelateEffectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelateEffectLabel.h; path = Effect/PixelateEffectLabel.h; sourceTree = "<group>"; };
+		6409C2131EA9A12000BD97A8 /* PixelateEffectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PixelateEffectLabel.m; path = Effect/PixelateEffectLabel.m; sourceTree = "<group>"; };
+		6409C2151EA9A43100BD97A8 /* SparkleEffectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SparkleEffectLabel.h; path = Effect/SparkleEffectLabel.h; sourceTree = "<group>"; };
+		6409C2161EA9A43100BD97A8 /* SparkleEffectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SparkleEffectLabel.m; path = Effect/SparkleEffectLabel.m; sourceTree = "<group>"; };
+		6409C2251EA9B5D400BD97A8 /* AnvilEffectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnvilEffectLabel.h; path = Effect/AnvilEffectLabel.h; sourceTree = "<group>"; };
+		6409C2261EA9B5D400BD97A8 /* AnvilEffectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnvilEffectLabel.m; path = Effect/AnvilEffectLabel.m; sourceTree = "<group>"; };
+		6409C26F1EA9F8B100BD97A8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = LGAnimationLabel/ViewController.m; sourceTree = SOURCE_ROOT; };
+		6409C2701EA9F8B100BD97A8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LGAnimationLabel/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		6409C2711EA9F8B100BD97A8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = LGAnimationLabel/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		6409C2721EA9F8B100BD97A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = LGAnimationLabel/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		6409C2751EA9F8B100BD97A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6409C2771EA9F8B100BD97A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		6409C2781EA9F8B100BD97A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LGAnimationLabel/Info.plist; sourceTree = SOURCE_ROOT; };
+		6409C2791EA9F8B100BD97A8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LGAnimationLabel/main.m; sourceTree = SOURCE_ROOT; };
+		6409C27A1EA9F8B100BD97A8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = LGAnimationLabel/ViewController.h; sourceTree = SOURCE_ROOT; };
+		641B6A651EA74E290007FDB0 /* LGAnimationLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGAnimationLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		641B6A7E1EA74E290007FDB0 /* LGAnimationLabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LGAnimationLabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		641B6A8E1EA74E330007FDB0 /* AnimationCharacterLimbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationCharacterLimbo.h; sourceTree = "<group>"; };
+		641B6A8F1EA74E330007FDB0 /* AnimationCharacterLimbo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationCharacterLimbo.m; sourceTree = "<group>"; };
+		641B6A901EA74E330007FDB0 /* AnimationEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationEasing.h; sourceTree = "<group>"; };
+		641B6A911EA74E330007FDB0 /* AnimationEasing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationEasing.m; sourceTree = "<group>"; };
+		641B6A921EA74E330007FDB0 /* AnimationLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLabel.h; sourceTree = "<group>"; };
+		641B6A931EA74E330007FDB0 /* AnimationLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLabel.m; sourceTree = "<group>"; };
+		641B6A941EA74E330007FDB0 /* AnimationLabelEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLabelEffect.h; sourceTree = "<group>"; };
+		641B6A951EA74E330007FDB0 /* AnimationLabelEmitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLabelEmitterView.h; sourceTree = "<group>"; };
+		641B6A961EA74E330007FDB0 /* AnimationLabelEmitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLabelEmitterView.m; sourceTree = "<group>"; };
+		641B6A971EA74E330007FDB0 /* NSString+AnimationLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AnimationLabel.h"; sourceTree = "<group>"; };
+		641B6A981EA74E330007FDB0 /* NSString+AnimationLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AnimationLabel.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		641B6A621EA74E290007FDB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		641B6A7B1EA74E290007FDB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6409C1D61EA8672E00BD97A8 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				6409C1DA1EA867AB00BD97A8 /* EvaporateEffectLabel.h */,
+				6409C1DB1EA867AB00BD97A8 /* EvaporateEffectLabel.m */,
+				6409C20F1EA8DCBD00BD97A8 /* FallEffectLabel.h */,
+				6409C2101EA8DCBD00BD97A8 /* FallEffectLabel.m */,
+				6409C2121EA9A12000BD97A8 /* PixelateEffectLabel.h */,
+				6409C2131EA9A12000BD97A8 /* PixelateEffectLabel.m */,
+				6409C2151EA9A43100BD97A8 /* SparkleEffectLabel.h */,
+				6409C2161EA9A43100BD97A8 /* SparkleEffectLabel.m */,
+				6409C2251EA9B5D400BD97A8 /* AnvilEffectLabel.h */,
+				6409C2261EA9B5D400BD97A8 /* AnvilEffectLabel.m */,
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
+		6409C1E11EA86F8800BD97A8 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				6409C1E21EA86F8800BD97A8 /* Fire.png */,
+				6409C1E31EA86F8800BD97A8 /* Fragment.png */,
+				6409C1E41EA86F8800BD97A8 /* Smoke.png */,
+				6409C1E51EA86F8800BD97A8 /* Sparkle.png */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		6409C2731EA9F8B100BD97A8 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				6409C2741EA9F8B100BD97A8 /* LaunchScreen.storyboard */,
+				6409C2761EA9F8B100BD97A8 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = LGAnimationLabel/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		641B6A5C1EA74E290007FDB0 = {
+			isa = PBXGroup;
+			children = (
+				641B6A8D1EA74E330007FDB0 /* AnimationLabel */,
+				641B6A671EA74E290007FDB0 /* LGAnimationLabel */,
+				641B6A661EA74E290007FDB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		641B6A661EA74E290007FDB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				641B6A651EA74E290007FDB0 /* LGAnimationLabel.app */,
+				641B6A7E1EA74E290007FDB0 /* LGAnimationLabelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		641B6A671EA74E290007FDB0 /* LGAnimationLabel */ = {
+			isa = PBXGroup;
+			children = (
+				6409C26F1EA9F8B100BD97A8 /* ViewController.m */,
+				6409C2701EA9F8B100BD97A8 /* AppDelegate.h */,
+				6409C2711EA9F8B100BD97A8 /* AppDelegate.m */,
+				6409C2721EA9F8B100BD97A8 /* Assets.xcassets */,
+				6409C2731EA9F8B100BD97A8 /* Base.lproj */,
+				6409C2781EA9F8B100BD97A8 /* Info.plist */,
+				6409C27A1EA9F8B100BD97A8 /* ViewController.h */,
+				641B6A681EA74E290007FDB0 /* Supporting Files */,
+			);
+			name = LGAnimationLabel;
+			path = labelcoding;
+			sourceTree = "<group>";
+		};
+		641B6A681EA74E290007FDB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6409C2791EA9F8B100BD97A8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		641B6A8D1EA74E330007FDB0 /* AnimationLabel */ = {
+			isa = PBXGroup;
+			children = (
+				641B6A8E1EA74E330007FDB0 /* AnimationCharacterLimbo.h */,
+				641B6A8F1EA74E330007FDB0 /* AnimationCharacterLimbo.m */,
+				641B6A901EA74E330007FDB0 /* AnimationEasing.h */,
+				641B6A911EA74E330007FDB0 /* AnimationEasing.m */,
+				641B6A921EA74E330007FDB0 /* AnimationLabel.h */,
+				641B6A931EA74E330007FDB0 /* AnimationLabel.m */,
+				641B6A941EA74E330007FDB0 /* AnimationLabelEffect.h */,
+				641B6A951EA74E330007FDB0 /* AnimationLabelEmitterView.h */,
+				641B6A961EA74E330007FDB0 /* AnimationLabelEmitterView.m */,
+				641B6A971EA74E330007FDB0 /* NSString+AnimationLabel.h */,
+				641B6A981EA74E330007FDB0 /* NSString+AnimationLabel.m */,
+				6409C1E11EA86F8800BD97A8 /* Particles */,
+				6409C1D61EA8672E00BD97A8 /* Effects */,
+			);
+			path = AnimationLabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		641B6A641EA74E290007FDB0 /* LGAnimationLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 641B6A871EA74E290007FDB0 /* Build configuration list for PBXNativeTarget "LGAnimationLabel" */;
+			buildPhases = (
+				641B6A611EA74E290007FDB0 /* Sources */,
+				641B6A621EA74E290007FDB0 /* Frameworks */,
+				641B6A631EA74E290007FDB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LGAnimationLabel;
+			productName = labelcoding;
+			productReference = 641B6A651EA74E290007FDB0 /* LGAnimationLabel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		641B6A7D1EA74E290007FDB0 /* LGAnimationLabelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 641B6A8A1EA74E290007FDB0 /* Build configuration list for PBXNativeTarget "LGAnimationLabelUITests" */;
+			buildPhases = (
+				641B6A7A1EA74E290007FDB0 /* Sources */,
+				641B6A7B1EA74E290007FDB0 /* Frameworks */,
+				641B6A7C1EA74E290007FDB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				641B6A801EA74E290007FDB0 /* PBXTargetDependency */,
+			);
+			name = LGAnimationLabelUITests;
+			productName = labelcodingUITests;
+			productReference = 641B6A7E1EA74E290007FDB0 /* LGAnimationLabelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		641B6A5D1EA74E290007FDB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = luca;
+				TargetAttributes = {
+					641B6A641EA74E290007FDB0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					641B6A7D1EA74E290007FDB0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TX4QS87C95;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 641B6A641EA74E290007FDB0;
+					};
+				};
+			};
+			buildConfigurationList = 641B6A601EA74E290007FDB0 /* Build configuration list for PBXProject "LGAnimationLabel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 641B6A5C1EA74E290007FDB0;
+			productRefGroup = 641B6A661EA74E290007FDB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				641B6A641EA74E290007FDB0 /* LGAnimationLabel */,
+				641B6A7D1EA74E290007FDB0 /* LGAnimationLabelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		641B6A631EA74E290007FDB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6409C2801EA9F8B100BD97A8 /* Info.plist in Resources */,
+				6409C27F1EA9F8B100BD97A8 /* Main.storyboard in Resources */,
+				6409C1E71EA86F8800BD97A8 /* Fragment.png in Resources */,
+				6409C1E61EA86F8800BD97A8 /* Fire.png in Resources */,
+				6409C1E91EA86F8800BD97A8 /* Sparkle.png in Resources */,
+				6409C27E1EA9F8B100BD97A8 /* LaunchScreen.storyboard in Resources */,
+				6409C1E81EA86F8800BD97A8 /* Smoke.png in Resources */,
+				6409C27D1EA9F8B100BD97A8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		641B6A7C1EA74E290007FDB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		641B6A611EA74E290007FDB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				641B6A991EA74E330007FDB0 /* AnimationCharacterLimbo.m in Sources */,
+				641B6A9B1EA74E330007FDB0 /* AnimationLabel.m in Sources */,
+				6409C2171EA9A43100BD97A8 /* SparkleEffectLabel.m in Sources */,
+				6409C1DC1EA867AB00BD97A8 /* EvaporateEffectLabel.m in Sources */,
+				641B6A9C1EA74E330007FDB0 /* AnimationLabelEmitterView.m in Sources */,
+				6409C2271EA9B5D400BD97A8 /* AnvilEffectLabel.m in Sources */,
+				6409C27B1EA9F8B100BD97A8 /* ViewController.m in Sources */,
+				6409C27C1EA9F8B100BD97A8 /* AppDelegate.m in Sources */,
+				641B6A9A1EA74E330007FDB0 /* AnimationEasing.m in Sources */,
+				6409C2111EA8DCBD00BD97A8 /* FallEffectLabel.m in Sources */,
+				6409C2141EA9A12000BD97A8 /* PixelateEffectLabel.m in Sources */,
+				6409C2811EA9F8B100BD97A8 /* main.m in Sources */,
+				641B6A9D1EA74E330007FDB0 /* NSString+AnimationLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		641B6A7A1EA74E290007FDB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		641B6A801EA74E290007FDB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 641B6A641EA74E290007FDB0 /* LGAnimationLabel */;
+			targetProxy = 641B6A7F1EA74E290007FDB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6409C2741EA9F8B100BD97A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6409C2751EA9F8B100BD97A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6409C2761EA9F8B100BD97A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6409C2771EA9F8B100BD97A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		641B6A851EA74E290007FDB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		641B6A861EA74E290007FDB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		641B6A881EA74E290007FDB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LGAnimationLabel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luca.animationLabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		641B6A891EA74E290007FDB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LGAnimationLabel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luca.animationLabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		641B6A8B1EA74E290007FDB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TX4QS87C95;
+				INFOPLIST_FILE = LGAnimationLabelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = luca.LGAnimationLabelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LGAnimationLabel;
+			};
+			name = Debug;
+		};
+		641B6A8C1EA74E290007FDB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TX4QS87C95;
+				INFOPLIST_FILE = LGAnimationLabelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = luca.LGAnimationLabelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LGAnimationLabel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		641B6A601EA74E290007FDB0 /* Build configuration list for PBXProject "LGAnimationLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641B6A851EA74E290007FDB0 /* Debug */,
+				641B6A861EA74E290007FDB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		641B6A871EA74E290007FDB0 /* Build configuration list for PBXNativeTarget "LGAnimationLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641B6A881EA74E290007FDB0 /* Debug */,
+				641B6A891EA74E290007FDB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		641B6A8A1EA74E290007FDB0 /* Build configuration list for PBXNativeTarget "LGAnimationLabelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641B6A8B1EA74E290007FDB0 /* Debug */,
+				641B6A8C1EA74E290007FDB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 641B6A5D1EA74E290007FDB0 /* Project object */;
+}
