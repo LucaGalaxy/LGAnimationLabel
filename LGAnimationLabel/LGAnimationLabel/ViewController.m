@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.texts = @[@"first", @"second", @"哈咯", @"不是吧"];
+    self.texts = @[@"first", @"test", @"start", @"不是吧"];
     
     // now we have implemented effects included in this array
     self.effects = @[@(AnimationLabelEffectScale), @(AnimationLabelEffectEvaporate), @(AnimationLabelEffectFall), @(AnimationLabelEffectPixelate), @(AnimationLabelEffectSparkle), @(AnimationLabelEffectAnvil)];
@@ -29,6 +29,7 @@
     
     self.label.animationEnable = YES;
     self.label.delegate = self;
+//    self.label.animationDuration = 0.1;
     
     // if you want to change the previewing effects
     // change the effect value below

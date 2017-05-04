@@ -176,7 +176,8 @@
 
 - (void)displayFrameTick {
     if (self.displayLink.duration > 0.0 && self.totalFrames == 0) {
-        float frameRate = (float)self.displayLink.duration / (float)self.displayLink.frameInterval;
+        float frameRate = (float)self.displayLink.duration / (float)self.displayLink.preferredFramesPerSecond * 60.0;
+
         self.totalFrames = ceil(self.animationDuration / frameRate);
         
         float totalDelay = (float)self.text.length * self.animationCharacterDelay;

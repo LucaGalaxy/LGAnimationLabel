@@ -21,7 +21,6 @@
 		6409C27D1EA9F8B100BD97A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6409C2721EA9F8B100BD97A8 /* Assets.xcassets */; };
 		6409C27E1EA9F8B100BD97A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6409C2741EA9F8B100BD97A8 /* LaunchScreen.storyboard */; };
 		6409C27F1EA9F8B100BD97A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6409C2761EA9F8B100BD97A8 /* Main.storyboard */; };
-		6409C2801EA9F8B100BD97A8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6409C2781EA9F8B100BD97A8 /* Info.plist */; };
 		6409C2811EA9F8B100BD97A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409C2791EA9F8B100BD97A8 /* main.m */; };
 		641B6A991EA74E330007FDB0 /* AnimationCharacterLimbo.m in Sources */ = {isa = PBXBuildFile; fileRef = 641B6A8F1EA74E330007FDB0 /* AnimationCharacterLimbo.m */; };
 		641B6A9A1EA74E330007FDB0 /* AnimationEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 641B6A911EA74E330007FDB0 /* AnimationEasing.m */; };
@@ -241,7 +240,7 @@
 		641B6A5D1EA74E290007FDB0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = luca;
 				TargetAttributes = {
 					641B6A641EA74E290007FDB0 = {
@@ -280,7 +279,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6409C2801EA9F8B100BD97A8 /* Info.plist in Resources */,
 				6409C27F1EA9F8B100BD97A8 /* Main.storyboard in Resources */,
 				6409C1E71EA86F8800BD97A8 /* Fragment.png in Resources */,
 				6409C1E61EA86F8800BD97A8 /* Fire.png in Resources */,
